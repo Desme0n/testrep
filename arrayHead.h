@@ -1,0 +1,2 @@
+void squareArray(int *, int );
+
