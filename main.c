@@ -2,12 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include "load.h"
-
-#ifdef __linux__
-#define ADD_PREFIX_AND_SUFFIX(input) ("./" #input ".so")
-#else
 #define ADD_PREFIX_AND_SUFFIX(input) ("" #input ".dll")
-#endif
+
 void inputArray(int A[], int size) {
     for (int i = 0; i < size; i++) {
         A[i] = rand() % 101 - 50;
